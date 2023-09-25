@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#root{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  margin-top: 50px; 
+  text-align: center;
+  gap: 10px;
+}
+
+.card{
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.refresh-bnt{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.refresh-bnt:active{
+  transform: translateY(2px);
+}
+
+
+
+@media screen and (max-width: 680px) {
+  ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 100px;
+    height: 100px;
+  }
+}
